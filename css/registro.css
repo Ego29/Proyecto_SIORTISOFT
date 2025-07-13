@@ -1,0 +1,108 @@
+/* === GENERAL === */
+body {
+    background-color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* === FORMULARIO DE REGISTRO === */
+.login-form {
+    background: linear-gradient(135deg, #ffffff, #e9f0ff);
+    padding: 30px 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    margin: 80px auto 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #d0dffe;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2a3f66;
+    text-align: center;
+    border-bottom: 2px solid #7aa7ff;
+    padding-bottom: 10px;
+}
+
+/* Etiquetas */
+.login-form label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+/* Campos de entrada */
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="number"],
+.login-form input[type="password"],
+.login-form input[type="tel"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccd7ea;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #fdfdfd;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #4a69bd;
+    box-shadow: 0 0 5px rgba(74, 105, 189, 0.4);
+}
+
+/* Botón */
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a69bd;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #3b57a3;
+    transform: translateY(-2px);
+}
+
+/* Texto extra */
+.extra {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.extra a {
+    color: #4a69bd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}

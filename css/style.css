@@ -1,0 +1,254 @@
+/* === HERO SECTION === */
+.hero-section {
+    background: linear-gradient(rgb(167, 181, 244), rgb(167, 181, 244)),
+        url('https://via.placeholder.com/1500x800?text=Edificio+Educativo') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 190px 10px 80px;
+    text-shadow: 2px 2px 4px rgb(167, 181, 244);
+    text-align: center;
+    scroll-margin-top: 120px;
+}
+
+/* === ERRORES DE VALIDACIÓN === */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* === CONTENEDOR GENERAL === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* === NAVBAR === */
+nav {
+    padding: 15px 0 10px;
+}
+
+.navbar-brand img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.navbar-nav .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .nav-link.dropdown-toggle {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.dropdown-toggle:hover {
+    color: #ccc !important;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* === ÍCONOS DE CARACTERÍSTICAS === */
+.feature-icon {
+    font-size: 3.5rem;
+    color: rgb(167, 181, 244);
+    margin-bottom: 20px;
+}
+
+/* === TARJETAS PERSONALIZADAS === */
+.card-custom {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === FONDO AZUL CLARO === */
+.bg-light-blue {
+    background-color: #f0f8ff;
+}
+
+/* === FOOTER === */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-horizontal p {
+    margin: 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-horizontal p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer-icons i {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-icons a:hover i {
+    color: #00d1b2;
+}
+
+.footer-icons,
+.footer-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-links a,
+.footer-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-icons a:hover {
+    color: #00d1b2;
+}
+
+/* === VISIÓN SECTION === */
+.vision-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.vision-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.vision-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.vision-item img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-item h4 {
+    font-weight: 600;
+    color: #495057;
+}
+
+.vision-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* === MISIÓN SECTION === */
+.mision-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    color: #343a40;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.mision-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.mision-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mision-icon {
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* === BOTÓN PERSONALIZADO === */
+.btn-fondo {
+    background-color: rgb(167, 181, 244);
+    color: white;
+    border: 1px solid white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-fondo:hover {
+    background-color: white;
+    color: rgb(167, 181, 244);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand img {
+        height: 70px;
+    }
+
+    .footer-horizontal {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
