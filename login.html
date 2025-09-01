@@ -15,8 +15,6 @@
     <!-- Estilo personalizado -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
-
-    <!-- Evitar barra azul en enlaces -->
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -47,7 +45,8 @@
     <!-- Contenido principal -->
     <main class="flex-grow-1">
         <div class="container d-flex justify-content-center align-items-center flex-column">
-            <form class="login-form text-center" method="post" action="login.php">
+            <!-- Quitamos el action con PHP -->
+            <form class="login-form text-center" id="formLogin">
                 <h2>INICIO SESIÓN</h2>
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" required />
@@ -93,6 +92,7 @@
             </div>
         </div>
     </footer>
+
     <script src="js/script_login.js"></script>
 </body>
 
